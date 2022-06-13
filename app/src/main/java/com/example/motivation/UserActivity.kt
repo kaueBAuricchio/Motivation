@@ -2,20 +2,19 @@ package com.example.motivation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.motivation.databinding.ActivityMainBinding
+import com.example.motivation.databinding.ActivityUserBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityMainBinding
-
+class UserActivity : AppCompatActivity() {
+    private lateinit var binding:ActivityUserBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         supportActionBar?.hide()
 
-        binding.buttonPhrase.setOnClickListener{
+        binding.buttonSave.setOnClickListener {
 
         }
     }
