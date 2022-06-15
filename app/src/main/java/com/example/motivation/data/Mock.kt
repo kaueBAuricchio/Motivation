@@ -23,6 +23,6 @@ class Mock {
 
         val filtered = mListPhrase.filter { it.categoryId == value || value == all }
        return filtered[Random.nextInt(filtered.size)].description
-
+//
     }
 }
